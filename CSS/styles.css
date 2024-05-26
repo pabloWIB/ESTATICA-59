@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family:arial; background-color: #fff; color: #000;
+}
+
+.loading-wrapper {
+  height:90px;
+  width:200px;
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  margin:auto;
+}
+
+.loading-wrapper p {
+  font-size:12px;
+  text-align:center;
+  text-transform:uppercase;
+  color:rgba(0,0,0,.4);
+  margin-bottom:20px;
+}
+
+.loading-circle {
+  margin:0 auto;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #968BAA;
+  border-radius: 50%;
+  border-top-color: rgba(0,0,0,.1);
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
